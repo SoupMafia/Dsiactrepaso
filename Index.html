@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Impuestos y Conversión de Divisas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Calculadora de Impuestos y Conversión de Divisas</h1>
+    <div>
+        <label for="precio">Precio en USD:</label>
+        <input type="number" id="precio" step="0.01" placeholder="Ingrese el precio en USD">
+    </div>
+    <div>
+        <label for="plataforma">Plataforma:</label>
+        <select id="plataforma">
+            <option value="steam">Steam (USD)</option>
+            <option value="xbox">Xbox (ARS)</option>
+            <option value="googleplay">Google Play (USD)</option>
+            <option value="roblox">Roblox (USD)</option>
+            <option value="microsoft">Microsoft Store (ARS)</option>
+        </select>
+    </div>
+    <button onclick="calcularImpuestos()">Calcular</button>
 
+    <div id="resultado"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
